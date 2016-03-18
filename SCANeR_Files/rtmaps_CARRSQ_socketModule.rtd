@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RT-MAPSDiagram EngineVersion="3.4">
+  <RegisteredPackages>
+    <File><![CDATA[C:/Users/Preparation Station/Downloads/rtmaps_CARRSQ_v14.pck]]></File>
+    <File><![CDATA[C:/Program Files (x86)/Intempora/RTMaps 3.4/packages/rtmaps_socket.pck]]></File>
+  </RegisteredPackages>
+  <EngineProperties>
+    <Property LongName="Engine.startTimespeed" Type="1">1000</Property>
+    <Property LongName="Engine.startTime" Type="1">0</Property>
+    <Property LongName="Engine.session" Type="3"><![CDATA[unspecified]]></Property>
+    <Property LongName="Engine.recordingAtStart" Type="0">true</Property>
+    <Property LongName="Engine.recording" Type="0">true</Property>
+    <Property LongName="Engine.sequentialStart" Type="0">false</Property>
+    <Property LongName="Engine.autoDetectStartTime" Type="0">true</Property>
+  </EngineProperties>
+  <StudioProperties/>
+  <ClocksManagement>
+    <Property LongName="ClocksManagement.activeClock" Type="4"><![CDATA[1|0|RTMaps_standard_clock]]></Property>
+  </ClocksManagement>
+  <Component InstanceName="ScanerStudio_1_4_Interface_6" Model="ScanerStudio_1_4_Interface">
+    <Output LongName="ScanerStudio_1_4_Interface_6.StreamOutput" Name="StreamOutput">
+      <Property LongName="ScanerStudio_1_4_Interface_6.StreamOutput.subsampling" Type="1">1</Property>
+      <Property LongName="ScanerStudio_1_4_Interface_6.StreamOutput.fifosize" Type="1">16</Property>
+      <Property LongName="ScanerStudio_1_4_Interface_6.StreamOutput.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="ScanerStudio_1_4_Interface_6.Scaner_Configuration" Type="3"><![CDATA[PreparationStationv14]]></Property>
+    <Property LongName="ScanerStudio_1_4_Interface_6.Driver_code" Type="3"/>
+    <Property LongName="ScanerStudio_1_4_Interface_6.Scenario" Type="3"/>
+    <Property LongName="ScanerStudio_1_4_Interface_6.Enable_write_to_stream" Type="0">true</Property>
+    <Property LongName="ScanerStudio_1_4_Interface_6.Enable_write_to_file" Type="0">false</Property>
+    <Property LongName="ScanerStudio_1_4_Interface_6.Disable_headers" Type="0">true</Property>
+    <Property LongName="ScanerStudio_1_4_Interface_6.Enable_fixed_output_rate" Type="0">true</Property>
+    <Property LongName="ScanerStudio_1_4_Interface_6.Output_rate" Type="1">10</Property>
+    <Property LongName="ScanerStudio_1_4_Interface_6.FilePath" Type="3"><![CDATA[C:\Simulation_Logs_Text_Files\ScanerStudio_1_4_Interface_data_]]></Property>
+    <Property LongName="ScanerStudio_1_4_Interface_6.Process_frequency" Type="2">20</Property>
+    <Property LongName="ScanerStudio_1_4_Interface_6.threaded" Type="0">true</Property>
+    <Property LongName="ScanerStudio_1_4_Interface_6.priority" Type="1">128</Property>
+  </Component>
+  <Component InstanceName="RawSocketClient_3" Model="RawSocketClient">
+    <Input LongName="RawSocketClient_3.input" Name="input">
+      <Property LongName="RawSocketClient_3.input.readerType" Type="1">0</Property>
+      <Property LongName="RawSocketClient_3.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="RawSocketClient_3.output" Name="output">
+      <Property LongName="RawSocketClient_3.output.subsampling" Type="1">1</Property>
+      <Property LongName="RawSocketClient_3.output.fifosize" Type="1">16</Property>
+      <Property LongName="RawSocketClient_3.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="RawSocketClient_3.Type" Type="4"><![CDATA[4|0|TCP|UDP|Multicast|Broadcast]]></Property>
+    <Property LongName="RawSocketClient_3.Port" Type="1">49500</Property>
+    <Property LongName="RawSocketClient_3.DestinationIP" Type="3"><![CDATA[127.0.0.1]]></Property>
+    <Property LongName="RawSocketClient_3.EnableSend" Type="0">true</Property>
+    <Property LongName="RawSocketClient_3.ConnectTimeout" Type="1">3000000</Property>
+    <Property LongName="RawSocketClient_3.NbConnectionAttempts" Type="1">0</Property>
+    <Property LongName="RawSocketClient_3.MaxMsgSize" Type="1">65507</Property>
+    <Property LongName="RawSocketClient_3.EnableRecv" Type="0">true</Property>
+    <Property LongName="RawSocketClient_3.RecvTimeout" Type="1">10000</Property>
+    <Property LongName="RawSocketClient_3.RecvMaxMsgSize" Type="1">65507</Property>
+    <Property LongName="RawSocketClient_3.MulticastTTL" Type="1">1</Property>
+    <Property LongName="RawSocketClient_3.TcpNoDelay" Type="0">true</Property>
+    <Property LongName="RawSocketClient_3.Verbose" Type="0">false</Property>
+    <Property LongName="RawSocketClient_3.threaded" Type="0">true</Property>
+    <Property LongName="RawSocketClient_3.priority" Type="1">128</Property>
+  </Component>
+  <Connection Input="RawSocketClient_3.input" Output="ScanerStudio_1_4_Interface_6.StreamOutput"/>
+<View ID="JavaStudio1.0">
+<BackgroundImage/>
+<ComponentBox InstanceName="ScanerStudio_1_4_Interface_6" x="41" y="144"/>
+<ComponentBox InstanceName="RawSocketClient_3" x="226" y="136"/>
+<Connection InstanceName="RawSocketClient_3.input" autobreak="true" color="-1286400"/>
+</View>
+</RT-MAPSDiagram>

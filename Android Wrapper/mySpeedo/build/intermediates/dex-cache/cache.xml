@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/patrickpro/DEVELOPMENT/CODE/Android Studio/mySpeedo/app/build/intermediates/transforms/instantRunSlicer/debug/jars/1/1a/dependencies.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a9598686a5595563a1871547c53fc7c36fa28e65">
+        <dex dex="/Users/patrickpro/DEVELOPMENT/CODE/Android Studio/mySpeedo/app/build/intermediates/transforms/dex/debug/folders/1000/1a/dependencies_27aa5bf91c63f4ee5d442fb7bd84cb391f74ea63/classes.dex" />
+    </item>
+
+</items>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/patrickpro/DEVELOPMENT/CODE/Android Studio/mySpeedoNoChallenge/app/build/intermediates/transforms/instantRunSlicer/debug/jars/1/1a/dependencies.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="bb7697e16997ea64767e2cd4048915ea64041f0d">
+        <dex dex="/Users/patrickpro/DEVELOPMENT/CODE/Android Studio/mySpeedoNoChallenge/app/build/intermediates/transforms/dex/debug/folders/1000/1a/dependencies_7fe7c78a77c779376d1a7465219a75aeffee07c4/classes.dex" />
+    </item>
+    <item
+        jar="/Users/patrickpro/DEVELOPMENT/CODE/Android Studio/mySpeedoNoChallenge/app/build/intermediates/transforms/instantRunSlicer/debug/jars/1/5/main_slice.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="bfa0fe89813db5ea5e298bbcb7d27245ed0009ac">
+        <dex dex="/Users/patrickpro/DEVELOPMENT/CODE/Android Studio/mySpeedoNoChallenge/app/build/intermediates/transforms/dex/debug/folders/1000/5/main_slice_7dddcaaeb9e64b8731c86fbc758da4c2d1a4c09a/classes.dex" />
+    </item>
+
+</items>
